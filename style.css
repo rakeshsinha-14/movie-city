@@ -1,0 +1,497 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  
+  /* Navbar */
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 0.495);
+    position: fixed;
+    box-shadow: 1px 4px 18px 0px rgb(0 0 0);
+  }
+  
+  .logo {
+    margin: 1px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 75px;
+  }
+  
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  
+  .nav ul li a {
+    padding: 15px;
+    margin: 9px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    font-weight: 500;
+    height: 10px;
+    text-shadow: 0px 1px 0px rgb(255, 206, 206);
+  }
+  
+  .nav ul li a:hover {
+    background-color: rgb(219, 196, 163);
+    border-radius: 35px;
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .logo h1 {
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 1000;
+    font-size: 40px;
+    text-shadow: 0px 2px 2px rgb(255, 207, 189);
+    color: white;
+  }
+  
+  .button-log {
+    width: 70px;
+    height: 40px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 23px;
+    border: none;
+    transition: 0.5s;
+  }
+  
+  .button-log:hover {
+    background-color: rgb(255, 149, 0);
+    color: white;
+    opacity: 0.9;
+  }
+  
+  /* Add a media query for responsiveness */
+  @media screen and (max-width: 768px) {
+    .logo h1 {
+      font-size: 30px;
+    }
+  
+    .button-log {
+      width: 50px;
+      height: 30px;
+      font-size: small;
+    }
+  }
+  
+  /* Continue with the rest of your CSS... */
+  
+
+.cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 102%;
+    width: 100%;
+    z-index: -50;
+    background-color: black;
+    opacity: 35%;
+}
+
+.welcome-container{
+    z-index: 100;
+    /* border: 2px solid red; */
+    height: 60vh;
+    width: 100vw;
+    /* margin-top: 15vh; */
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 155px;
+}
+
+.back-ground{
+    z-index: -100;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    box-shadow: -2px 11px 12px -0.2px black;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 360px;
+    width: 75vw;
+}
+
+.content h1{
+    font-size: 55px;
+}
+
+.content p{
+    font-size: large;
+}
+
+#input{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 45px;
+    margin: 20px 0;
+    padding: 0 25px;
+    font-size: large;
+    border: none;
+    border-radius: 20px;
+    width: 45rem;
+}
+
+#search-button{
+    height: 40px;
+    width: 100px;
+    font-size: large;
+    border: none;
+    border-radius: 22px;
+    margin-left: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#search-button:hover{
+    background-color: #171841;
+    color: white;
+}
+
+.result-page{
+    display: flex;
+    justify-content: space-around;
+    column-gap: 100px;
+}
+
+.movie-info{
+    line-height: 50px;
+}
+
+.details{
+    font-weight: 600;
+}
+
+.poster img{
+    border-radius: 10px;
+}
+
+#page-2{
+    margin-top: 227px;
+    height: 100vh;
+    width: 100vw;
+    /* border: 2px solid red; */
+}
+
+/* Categories */
+
+.home h1 {
+    color: black;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.h-prime {
+    font-size: 4vw;
+    padding: 1em;
+    padding-top: 95px;
+    padding-bottom: 0;
+    color: rgb(255,72,0);
+}
+
+.h-secondary {
+    font-size: 3vw; 
+    padding: 0.5em;
+    
+}
+
+.box a{
+    color: #e64100;
+}
+.center {
+    text-align: center;
+}
+
+#lists{
+    margin: 35px;
+    display: flex;
+}
+#lists .box{
+
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(254 231 220);
+    display:block;
+    box-shadow: 0px 1px 1px black;
+    color: black;
+}
+#lists .box img{
+    height: 200px;
+    display: block;
+    margin: auto;
+    padding: 7px ;
+    border-radius: 15px;
+}
+
+.lists-container h1{
+    font-weight: bold;
+    /* font-family: 'Playfair Display'; */
+}
+
+/* page-3 styling */
+
+.page-3{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-4{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-5{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-6{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.film{
+    height: 80vh;
+    width: 80vw;
+/* border: 2px solid red; */
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+}
+
+/* Footer */
+
+.f{
+    background-color: rgb(255, 72, 0);
+}
+.footer-container{
+    /* background-color: black;
+    width: 100%; */
+    padding: 30px 30px 30px;
+}
+.social-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    
+}
+
+.social-icon a {
+    
+    text-decoration: none;
+    padding: 15px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 50%;
+    color: rgb(255, 72, 0);
+    opacity: 0.9;
+}
+
+.social-icon a:hover {
+    background-color: rgb(255, 72, 0);
+    transition: 0.5s;
+}
+.social-icon a:hover i {
+    color: white;
+    transition: 0.5s;
+}
+
+.footer-nav ul{
+    display: flex;
+   justify-content: center;
+   list-style: none;
+}
+.footer-nav ul li{
+   margin: 10px;
+}
+
+.footer-nav ul li a{
+   text-decoration: none;
+   color: white;
+   margin: 15px;
+   font-size: 1.3em;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.footer-nav ul li a:hover{
+    opacity: 0.8;
+}
+
+br{
+    color: white;
+    height: 10px;
+    width: 90vw;
+}
+
+.page-3 img{
+    height: 450px;
+    width: 300px;
+}
+
+.page-3 .lines{
+    color: white;
+    /* border: 2px solid white; */
+    height: 20vh;
+    width: 50vw;
+}
+
+.page-3 button{
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    border: none;
+    background-color: rgb(240, 165, 59);
+    font-size: large;
+    font-weight: bold;
+    color: white;
+}
+
+.page-3 button:hover{
+    background-color: rgb(255,72,0);
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.page-4 img{
+    height: 450px;
+    width: 300px;
+}
+
+.page-4 .lines{
+    color: white;
+    /* border: 2px solid white; */
+    height: 20vh;
+    width: 50vw;
+}
+
+.page-4 button{
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    border: none;
+    background-color: rgb(240, 165, 59);
+    font-size: large;
+    font-weight: bold;
+    color: white;
+}
+
+.page-4 button:hover{
+    background-color: rgb(255,72,0);
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.page-5 img{
+    height: 450px;
+    width: 300px;
+}
+
+.page-5 .lines{
+    color: white;
+    /* border: 2px solid white; */
+    height: 20vh;
+    width: 50vw;
+}
+.page-5 button{
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    border: none;
+    background-color: rgb(240, 165, 59);
+    font-size: large;
+    font-weight: bold;
+    color: white;
+}
+
+.page-5 button:hover{
+    background-color: rgb(255,72,0);
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.page-6 img{
+    height: 450px;
+    width: 300px;
+}
+
+.page-6 .lines{
+    color: white;
+    /* border: 2px solid white; */
+    height: 20vh;
+    width: 50vw;
+}
+
+.page-6 button{
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    border: none;
+    background-color: rgb(240, 165, 59);
+    font-size: large;
+    font-weight: bold;
+    color: white;
+}
+
+.page-6 button:hover{
+    background-color: rgb(255,72,0);
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.photo{
+    transition: all 0.3s linear;
+}
+
+.photo:hover{
+    scale: 1.2;
+    
+}
